@@ -1,0 +1,22 @@
+<p>user works!</p>
+<div class="justify-content-center">
+    <h2 class="display-2">User jsonplcaholder api fetched</h2>
+    <table class="table table-striped">
+        <thead>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Address</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let result of resultres">
+                <td>{{result.id}}</td>
+                <td>{{result.name}}</td>
+                <td>{{result.username}}</td>
+                <td>{{result.email}}</td>
+                <td>{{result.address.city}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
